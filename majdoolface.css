@@ -29,7 +29,7 @@ header {
 
 .logo img {
     width: 80px;
-    height: 80px; /* Adjusted for larger logo size */
+    height: 80px;
 }
 
 .nav-links {
@@ -42,7 +42,7 @@ header {
     color: #f1f1f1;
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 600; /* Slightly thicker font */
+    font-weight: 600;
     transition: color 0.3s;
 }
 
@@ -56,7 +56,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #d4d0c6;
-    height: calc(100vh - 80px); /* Full viewport height minus header */
+    height: calc(100vh - 80px);
     position: relative;
     text-align: center;
 }
@@ -68,15 +68,9 @@ header {
 }
 
 .hero-logo {
-    width: 350px; /* Adjusted size to fit the design */
+    width: 350px;
     margin-bottom: 2rem;
 }
-
-.discover-btn a{
-    text-decoration: none;
-    color: #fff;
-}
-
 
 .discover-btn {
     background-color: #000;
@@ -88,11 +82,12 @@ header {
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration: none; /* Ensures no underline */
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .discover-btn:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-
 }
