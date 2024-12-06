@@ -166,11 +166,14 @@ button[type="submit"]:hover {
 footer {
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;  /* Reduced padding to make the footer shorter */
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;  /* Slightly smaller font size */
     width: 100%;
-    margin-top: auto; /* Push footer to the bottom */
+    position: fixed;  /* Fix footer at the bottom */
+    bottom: 0;  /* Ensure it stays at the bottom of the screen */
+    left: 0;
+    z-index: 1000;
 }
 
 .footer-container {
@@ -179,27 +182,27 @@ footer {
 }
 
 .social-media h2 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;  /* Reduced font size */
+    margin-bottom: 8px;
     color: #f39c12;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;  /* Reduced gap between icons */
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 35px;  /* Smaller icons */
+    height: 35px;
     background-color: #444;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1rem;  /* Smaller icon size */
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -210,34 +213,17 @@ footer {
 
 .footer-info {
     color: #bbb;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .footer-info a {
     color: #f39c12;
     text-decoration: none;
-    margin: 0 6px;
+    margin: 0 4px;  /* Reduced margin between links */
     transition: color 0.3s ease;
 }
 
 .footer-info a:hover {
     color: white;
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .product-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 100%;
-    }
 }
