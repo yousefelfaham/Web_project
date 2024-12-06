@@ -10,6 +10,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    margin-bottom: 150px; /* Make space for the fixed footer */
 }
 
 /* Header Styles */
@@ -61,82 +62,78 @@ main {
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    justify-content: space-around;
 }
 
 .product-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 30px;
+    justify-content: center;
 }
 
 .card {
+    width: 250px;
+    height: 350px; /* Same height for all cards */
     background-color: white;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    flex: 1 1 210px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: center;
     padding: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05); /* Slightly zooms the card on hover */
 }
 
-.image {
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
-}
-
-.image img {
+.card .image img {
     width: 100%;
-    height: 100%;
+    height: 180px;
     object-fit: cover;
 }
 
-.product_name {
-    font-size: 1.2em;
+.card p.product_name {
     margin: 10px 0;
+    font-weight: bold;
     color: #333;
 }
 
-.price {
-    font-size: 1.1em;
-    color: #666;
+.card .price {
+    font-size: 1.2rem;
+    color: #333;
 }
 
-.add {
+.card button.add {
     background-color: black;
-    color: white;
-    padding: 10px;
     border: none;
+    padding: 12px;
     width: 100%;
-    margin-top: 10px;
+    color: white;
+    font-size: 1.1rem;
     cursor: pointer;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
 }
 
-.add:hover {
-    background-color: #333;
+.card button.add:hover {
+    background-color: #444;
+    transform: scale(1.05);
 }
 
-/* Footer Section (Updated to match the new footer style) */
+/* Footer Styles */
 footer {
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    margin-top: auto; /* Push footer to the bottom */
 }
 
 .footer-container {
@@ -145,27 +142,27 @@ footer {
 }
 
 .social-media h2 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
     color: #f39c12;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: #444;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -176,34 +173,17 @@ footer {
 
 .footer-info {
     color: #bbb;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .footer-info a {
     color: #f39c12;
     text-decoration: none;
-    margin: 0 6px;
+    margin: 0 5px;
     transition: color 0.3s ease;
 }
 
 .footer-info a:hover {
     color: white;
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .product-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 100%;
-    }
 }
