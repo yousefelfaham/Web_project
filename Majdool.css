@@ -1,10 +1,10 @@
+/* Global Reset and Styles */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 
 body {
     background-color: #f9f9f9;
@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background-color: #000;
     padding: 1em 0;
@@ -53,10 +54,18 @@ header {
     color: #f39c12;
 }
 
+/* Main Content Styles */
 main {
     max-width: 1200px;
     width: 90%;
     margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -119,14 +128,77 @@ main {
     background-color: #333;
 }
 
+/* Footer Section (Updated to match the new footer style) */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #f39c12;
+}
+
+.footer-info {
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.footer-info a {
+    color: #f39c12;
+    text-decoration: none;
+    margin: 0 6px;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .bar {
+    .navbar {
         flex-direction: column;
-        gap: 20px;
+        text-align: center;
     }
 
-    main {
+    .product-cards {
         flex-direction: column;
         align-items: center;
     }
