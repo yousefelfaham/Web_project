@@ -131,9 +131,11 @@ header {
 footer {
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding */
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Reduced font size */
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
 
@@ -143,27 +145,27 @@ footer {
 }
 
 .social-media h2 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem; /* Reduced size */
+    margin-bottom: 5px;
     color: #f39c12;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px; /* Reduced gap */
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 35px; /* Reduced size */
+    height: 35px; /* Reduced size */
     background-color: #444;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Slightly smaller icons */
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -174,13 +176,13 @@ footer {
 
 .footer-info {
     color: #bbb;
-    margin-top: 10px;
+    margin-top: 5px; /* Reduced margin */
 }
 
 .footer-info a {
     color: #f39c12;
     text-decoration: none;
-    margin: 0 6px;
+    margin: 0 5px;
     transition: color 0.3s ease;
 }
 
