@@ -9,6 +9,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
 }
 
 /* Header Section */
@@ -52,6 +55,8 @@ main {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Ensures the main content grows to take up the remaining space */
+    padding-bottom: 80px; /* Add padding to make sure the footer doesn't overlap the buttons */
 }
 
 h2 {
@@ -125,6 +130,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 15px;  /* Reduced gap */
+    margin-bottom: 50px; /* Add margin to ensure buttons are not covered */
 }
 
 button.action-btn {
@@ -151,33 +157,43 @@ button.action-btn a {
 footer {
     background-color: black;
     color: white;
-    padding: 15px 0;  /* Reduced padding */
+    padding: 8px 0;  /* Reduced padding for a smaller footer */
     text-align: center;
+    font-size: 0.8rem;  /* Reduced font size */
 }
 
-footer .footer-container {
-    max-width: 1000px;  /* Reduced width */
+.footer-container {
+    max-width: 1000px;  /* Reduce max-width for a more compact container */
     margin: 0 auto;
+    padding: 0 15px;  /* Reduced padding */
 }
 
-footer .social-links a {
-    margin-right: 12px;  /* Reduced margin */
-    font-size: 1.3rem;  /* Reduced font size */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Reduced the gap between social media icons */
+    margin-bottom: 8px;  /* Reduced bottom margin */
+}
+
+.social-links a {
     color: white;
-    transition: color 0.3s;
+    font-size: 1.1rem;  /* Reduced icon size */
+    transition: color 0.3s ease;
 }
 
-footer .social-links a:hover {
+.social-links a:hover {
     color: #f39c12;
 }
 
-footer .footer-info a {
+.footer-info p {
+    margin: 2px 0;  /* Reduced margin to minimize space */
+}
+
+.footer-info a {
     color: #f39c12;
     text-decoration: none;
-    margin: 5px;
 }
 
-footer .footer-info a:hover {
-    color: white;
+.footer-info a:hover {
     text-decoration: underline;
 }
