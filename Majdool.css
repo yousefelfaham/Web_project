@@ -14,7 +14,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #000;
+    background-color: black;
     padding: 1em 0;
     position: sticky;
     top: 0;
@@ -130,7 +130,7 @@ main {
 
 /* Footer Section (Updated to match the new footer style) */
 footer {
-    background-color: #1a1a1a;
+    background-color: black;
     color: white;
     padding: 20px 0;
     text-align: center;
