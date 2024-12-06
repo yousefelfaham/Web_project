@@ -98,15 +98,18 @@ header {
     color: #555;
 }
 
-/* Footer Section (Matching the Signup Page Footer) */
+/* Footer Section (Matching the Majdool footer) */
 footer {
     background-color: black;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem; /* Adjust font size */
     width: 100%;
-    margin-top: auto; /* Push footer to the bottom */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10; /* Ensures footer stays on top */
 }
 
 .footer-container {
@@ -115,7 +118,7 @@ footer {
 }
 
 .social-media h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem; /* Adjust heading size */
     margin-bottom: 10px;
     color: #f39c12;
 }
@@ -123,19 +126,19 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: #444;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -159,4 +162,26 @@ footer {
 .footer-info a:hover {
     color: white;
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px 0; /* Smaller footer on mobile */
+    }
 }
