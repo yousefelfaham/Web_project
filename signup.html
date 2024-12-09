@@ -4,52 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="signup.css">
-    <!-- Add Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Majdool Website</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
         <nav class="navbar">
-            <h1 class="logo"><a href="login.html">Majdool</a></h1>
+            <h2 class="logo"><a href="login.html">Majdool</a></h2>
             <ul class="nav-links">
                 <li><a href="Majdool.html">Product</a></li>
                 <li><a href="about us.html">About</a></li>
                 <li><a href="signup.html">Signup</a></li>
+                <li><a href="cart.html">View Cart</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <main class="container">
-        <section class="signup-form">
-            <h2>Create an Account</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="userName">First Name</label>
-                    <input type="text" id="userName" name="userName" placeholder="First Name" required>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="left-section">
+            <div class="welcome-section">
+                <div class="hero-content">
+                    <h1>Welcome to Majdool</h1>
+                    <a href="Majdool.html" class="discover-btn">Discover Now</a>
                 </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-                </div>
-                <button type="submit" class="submit-btn">Sign Up</button>
-            </form>
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="login-section">
+                <h2>Login / Register</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -59,16 +58,16 @@
             <section class="social-media">
                 <h2>Connect with Us</h2>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61564358075541" target="_blank" class="facebook" aria-label="Facebook"  rel="noopener">
+                    <a href="https://www.facebook.com/profile.php?id=61564358075541" target="_blank" class="facebook" aria-label="Facebook" rel="noopener">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/_majdool_/" target="_blank" class="instagram" aria-label="Instagram"  rel="noopener">
+                    <a href="https://www.instagram.com/_majdool_/" target="_blank" class="instagram" aria-label="Instagram" rel="noopener">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.tiktok.com/search?q=majdool&t=1733452557246" target="_blank" class="tiktok" aria-label="TikTok"  rel="noopener">
+                    <a href="https://www.tiktok.com/@majdool_" target="_blank" class="tiktok" aria-label="TikTok" rel="noopener">
                         <i class="fab fa-tiktok"></i>
                     </a>
-                    <a href="mailto:example@example.com" class="email" aria-label="Email"  rel="noopener">
+                    <a href="mailto:example@example.com" class="email" aria-label="Email" rel="noopener">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -79,7 +78,6 @@
             </div>
         </div>
     </footer>
-    
 </body>
 
 </html>
