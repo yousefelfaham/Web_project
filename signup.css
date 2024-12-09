@@ -1,4 +1,4 @@
-/* Global Reset and Styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ body {
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
 }
 
 /* Header Styles */
@@ -62,30 +61,48 @@ header {
     color: #f39c12;
 }
 
-/* Container for Main Content */
-.container {
-    margin-top: 80px;
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
     width: 100%;
-    max-width: 400px;
+    max-width: 1200px;
+    margin-top: 20px;
 }
 
-/* Signup Form Styles */
+/* Video Section */
+.video-section video {
+    max-width: 650px; /* تصغير العرض */
+    max-height: 450px; /* تقليص الطول */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Signup Form */
 .signup-form {
     background: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px; /* زيادة العرض */
+    height: auto; /* تقليص الطول */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .signup-form h2 {
     text-align: center;
-    margin-bottom: 10px;
-    color: #333;
+    margin-bottom: 20px;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-/* Form Group Styles */
+/* Form Fields */
 .form-group {
     margin-bottom: 10px;
 }
@@ -110,7 +127,7 @@ header {
     outline: none;
 }
 
-/* Submit Button Styles */
+/* Submit Button */
 .submit-btn {
     width: 100%;
     padding: 10px;
@@ -131,12 +148,12 @@ header {
 footer {
     background-color: black;
     color: white;
-    padding: 10px 0; /* Reduced padding */
+    padding: 10px 0; /* تقليل حجم الفوتر */
     text-align: center;
-    font-size: 0.8rem; /* Reduced font size */
+    font-size: 0.9rem;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .footer-container {
@@ -145,27 +162,27 @@ footer {
 }
 
 .social-media h2 {
-    font-size: 1.4rem; /* Reduced size */
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     color: #f39c12;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduced gap */
+    gap: 15px;
 }
 
 .social-links a {
-    width: 35px; /* Reduced size */
-    height: 35px; /* Reduced size */
+    width: 40px;
+    height: 40px;
     background-color: #444;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 1.1rem; /* Slightly smaller icons */
+    font-size: 1.2rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -176,13 +193,13 @@ footer {
 
 .footer-info {
     color: #bbb;
-    margin-top: 5px; /* Reduced margin */
+    margin-top: 10px;
 }
 
 .footer-info a {
     color: #f39c12;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px;
     transition: color 0.3s ease;
 }
 
