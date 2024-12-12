@@ -117,7 +117,7 @@ h2 {
 }
 
 /* Total Price */
-#cart-total {
+.cart-total {
     font-size: 1.2rem;  
     font-weight: 600;
     color: #333;
