@@ -1,0 +1,259 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
+}
+.confirmation-form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.action-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #444;
+}
+/* Header Section */
+header {
+    background-color: black;
+    color: white;
+    padding: 0.5em 0;  /* Reduced padding */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;  /* Reduced the gap between nav items */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;  /* Reduced font size */
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
+
+/* Main Section */
+main {
+    max-width: 1000px;  
+    margin: 20px auto;  
+    padding: 20px;  
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Ensures the main content grows to take up the remaining space */
+    padding-bottom: 80px; /* Add padding to make sure the footer doesn't overlap the buttons */
+}
+
+h2 {
+    font-size: 2rem;  
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
+/* Cart Items */
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;  
+    padding: 12px;  
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 1.1rem;  
+    font-weight: 500;
+    color: black;
+}
+
+.item-price {
+    font-size: 1rem;  
+    color: #f39c12;
+    margin-top: 5px;
+}
+
+.remove-item {
+    background-color: #f39c12;
+    color: white;
+    padding: 6px 12px;  
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #e67e22;
+}
+
+/* Total Price */
+#cart-total {
+    font-size: 1.2rem;  
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
+/* Cart Actions */
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Reduced gap */
+    margin-bottom: 50px; /* Add margin to ensure buttons are not covered */
+}
+
+
+button.action-btn {
+    padding: 10px 25px;  /* Reduced padding */
+    font-size: 1rem;  /* Reduced font size */
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.action-btn:hover {
+    background-color: #f39c12;
+}
+
+button.action-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px 0;  /* Reduced padding for a smaller footer */
+    text-align: center;
+    font-size: 0.8rem;  /* Reduced font size */
+}
+
+.footer-container {
+    max-width: 1000px;  /* Reduce max-width for a more compact container */
+    margin: 0 auto;
+    padding: 0 15px;  /* Reduced padding */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Reduced the gap between social media icons */
+    margin-bottom: 8px;  /* Reduced bottom margin */
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.1rem;  /* Reduced icon size */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f39c12;
+}
+
+.footer-info p {
+    margin: 2px 0;  /* Reduced margin to minimize space */
+}
+
+.footer-info a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}

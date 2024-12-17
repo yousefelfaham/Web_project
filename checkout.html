@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo"><a href="login.html">Majdool</a></h1>
+            <ul class="nav-links">
+                <li><a href="Majdool.php">Product</a></li>
+                <li><a href="about us.html">About</a></li>
+                <li><a href="cart.html">View Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="checkout-container">
+        <form class="checkout-form" action="checkout.php" method="POST">
+            <h2>Checkout Information</h2>
+            <div class="form-group">
+                <label for="Address">Address</label>
+                <input type="text" id="Address" name="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="Number">Phone Number</label>
+                <input type="tel" id="Number" name="phone_number" placeholder="Enter your phone number" required>
+            </div>
+            <input type="hidden" name="total_price" id="total_price" value="">
+        
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+
+        
+    </main>
+    <script>
+        // Retrieve cart data from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let totalPrice = cart.reduce((sum, item) => sum + parseFloat(item.price), 0);
+    
+        // Set the total price in the hidden input
+        document.getElementById('total_price').value = totalPrice;
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <section class="social-media">
+                <h2>Connect with Us</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61564358075541" target="_blank" class="facebook" aria-label="Facebook" rel="noopener">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_majdool_/" target="_blank" class="instagram" aria-label="Instagram" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/search?q=majdool&t=1733452557246" target="_blank" class="tiktok" aria-label="TikTok" rel="noopener">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="mailto:yaraelfaham@gmail.com" class="email" aria-label="Email" rel="noopener">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </section>
+            <div class="footer-info">
+                <p>&copy; 2024 Majdool. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
